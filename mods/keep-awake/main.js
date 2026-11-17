@@ -62,6 +62,6 @@ export default class KeepAwake extends View {
         .hover((s) => s.bg(t.hover))
         .tooltip(this.on ? "Keeping this Mac and its display awake. Click to allow sleep." : "Click to keep this Mac and its display awake")
         .on_click((_e, cx) => this.toggle(cx))
-        .child(svg("mods/keep-awake/cup.svg").size(14).text_color(this.on ? t.accent : this.busy ? t.dim : t.muted)));
+        .child(svg(this.on ? "mods/keep-awake/cup-filled.svg" : "mods/keep-awake/cup.svg").size(14).text_color(this.on ? t.accent : this.busy ? t.dim : t.muted)));
   }
 }
