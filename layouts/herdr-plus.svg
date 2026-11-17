@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <!-- window -->
+  <rect width="320" height="200" rx="10" fill="#1b1c1f"/>
+  <!-- sidebar -->
+  <rect x="0" y="0" width="84" height="200" rx="10" fill="#222327"/>
+  <rect x="84" y="0" width="1" height="200" fill="#34353a"/>
+  <!-- spaces -->
+  <rect x="10" y="14" width="40" height="4" rx="2" fill="#7c7f87"/>
+  <rect x="10" y="26" width="56" height="4" rx="2" fill="#5d6068"/>
+  <rect x="10" y="38" width="48" height="4" rx="2" fill="#5d6068"/>
+  <rect x="10" y="50" width="60" height="4" rx="2" fill="#5d6068"/>
+  <!-- agents -->
+  <rect x="10" y="74" width="30" height="4" rx="2" fill="#7c7f87"/>
+  <rect x="10" y="86" width="62" height="4" rx="2" fill="#5d6068"/>
+  <rect x="10" y="98" width="54" height="4" rx="2" fill="#5d6068"/>
+  <rect x="10" y="110" width="58" height="4" rx="2" fill="#5d6068"/>
+  <!-- machines: name, CPU sparkline, memory bar -->
+  <rect x="10" y="140" width="36" height="3" rx="1.5" fill="#7c7f87"/>
+  <g fill="#8fb3e8">
+    <rect x="10" y="152" width="2" height="4"/><rect x="13" y="150" width="2" height="6"/><rect x="16" y="153" width="2" height="3"/>
+    <rect x="19" y="149" width="2" height="7"/><rect x="22" y="151" width="2" height="5"/><rect x="25" y="152" width="2" height="4"/>
+    <rect x="10" y="164" width="2" height="3"/><rect x="13" y="163" width="2" height="4"/><rect x="16" y="161" width="2" height="6"/>
+    <rect x="19" y="164" width="2" height="3"/><rect x="22" y="162" width="2" height="5"/><rect x="25" y="163" width="2" height="4"/>
+    <rect x="10" y="176" width="2" height="2"/><rect x="13" y="174" width="2" height="4"/><rect x="16" y="175" width="2" height="3"/>
+    <rect x="19" y="173" width="2" height="5"/><rect x="22" y="175" width="2" height="3"/><rect x="25" y="174" width="2" height="4"/>
+  </g>
+  <g fill="#34353a"><rect x="46" y="152" width="28" height="4" rx="2"/><rect x="46" y="164" width="28" height="4" rx="2"/><rect x="46" y="176" width="28" height="4" rx="2"/></g>
+  <g fill="#8fb3e8"><rect x="46" y="152" width="10" height="4" rx="2"/><rect x="46" y="164" width="16" height="4" rx="2"/><rect x="46" y="176" width="12" height="4" rx="2"/></g>
+  <!-- tabs: named pills -->
+  <rect x="94" y="9" width="58" height="14" rx="5" fill="#8fb3e8" opacity="0.85"/>
+  <rect x="157" y="9" width="70" height="14" rx="5" fill="#2c2d32"/>
+  <rect x="232" y="9" width="50" height="14" rx="5" fill="#2c2d32"/>
+  <rect x="100" y="14" width="40" height="4" rx="2" fill="#1b1c1f"/>
+  <rect x="163" y="14" width="54" height="4" rx="2" fill="#5d6068"/>
+  <rect x="238" y="14" width="36" height="4" rx="2" fill="#5d6068"/>
+  <!-- panes -->
+  <rect x="94" y="32" width="108" height="140" rx="6" fill="none" stroke="#3a3b41" stroke-width="1.5"/>
+  <rect x="210" y="32" width="102" height="140" rx="6" fill="none" stroke="#3a3b41" stroke-width="1.5"/>
+  <!-- status bar: usage limits + cup -->
+  <rect x="85" y="181" width="235" height="1" fill="#34353a"/>
+  <rect x="100" y="189" width="40" height="3" rx="1.5" fill="#5d6068"/>
+  <rect x="196" y="189" width="20" height="3" rx="1.5" fill="#34353a"/><rect x="196" y="189" width="6" height="3" rx="1.5" fill="#8fb3e8"/>
+  <rect x="220" y="189" width="34" height="3" rx="1.5" fill="#5d6068"/>
+  <rect x="262" y="189" width="20" height="3" rx="1.5" fill="#34353a"/><rect x="262" y="189" width="5" height="3" rx="1.5" fill="#8fb3e8"/>
+  <path d="M296 186h7v5a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2z" fill="#8fb3e8"/>
+  <path d="M303 187.5h1a1.5 1.5 0 0 1 0 3h-1" fill="none" stroke="#8fb3e8" stroke-width="1"/>
+</svg>
