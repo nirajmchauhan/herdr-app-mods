@@ -13,7 +13,7 @@ Read the live manuals first: `hc --skill` (terminals, agents, machines) and `her
 
 ## Delegating to worker agents
 
-Templates in `~/.config/herdr-core/templates/`: `opus` (Claude Opus 5.5), `astra` (Codex GPT-6 Astra), `sol` (Codex GPT-6.1 Sol). Each already tells the worker to report with `hc send` (RESULT:/BLOCKED:), and stay in scope.
+Templates in `~/.config/herdr-core/templates/`: `opus` (Claude Opus 5.5), `astra` (Codex GPT-6.2 Astra), `sol` (Codex GPT-6.2 Sol). Each already tells the worker to report with `hc send` (RESULT:/BLOCKED:), and stay in scope.
 
 - Launch: `hc run --bg --name <role> --cwd <dir> <template> "<scoped task>"`. Check `first_message.sent`; if false, `hc read` it before resending.
 - Don't wait or poll: no `hc wait`, no sleep loops. Keep working or end the turn; reports arrive as `<hc from="tN name">` input. hc also tells you when a worker is blocked, errors, or exits.
