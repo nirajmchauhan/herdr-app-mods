@@ -66,8 +66,8 @@ Herdr's `main` layout plus:
 | Template | Agent |
 |---|---|
 | `opus` | Claude Code, Opus 5.5 (1M context), high effort |
-| `astra` | Codex, GPT-6 Astra, high effort |
-| `sol` | Codex, GPT-6.1 Sol, high effort |
+| `astra` | Codex, GPT-6.2 Astra, high effort |
+| `sol` | Codex, GPT-6.2 Sol, high effort |
 
 A lead agent starts one with a task and keeps working:
 

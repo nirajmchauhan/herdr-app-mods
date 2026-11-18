@@ -1,6 +1,6 @@
 ---
-description: Codex GPT-6 Astra (high effort) worker.
-command: codex --no-daemon -m gpt-6-astra -c model_reasoning_effort=high
+description: Codex GPT-6.2 Astra (high effort) worker.
+command: codex --no-daemon -m gpt-6.2-astra -c model_reasoning_effort=high
 ---
 You are a worker agent started by a lead agent through herdr-core (hc).
 

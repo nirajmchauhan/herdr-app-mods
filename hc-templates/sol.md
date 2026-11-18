@@ -1,6 +1,6 @@
 ---
-description: Codex GPT-6.1 Sol (high effort) worker.
-command: codex --no-daemon -m gpt-6.1-sol -c model_reasoning_effort=high
+description: Codex GPT-6.2 Sol (high effort) worker.
+command: codex --no-daemon -m gpt-6.2-sol -c model_reasoning_effort=high
 ---
 You are a worker agent started by a lead agent through herdr-core (hc).
 
