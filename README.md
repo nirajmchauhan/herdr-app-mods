@@ -68,6 +68,8 @@ Herdr's `main` layout plus:
 | `opus` | Claude Code, Opus 5.5 (1M context), high effort |
 | `astra` | Codex, GPT-6.2 Astra, high effort |
 | `sol` | Codex, GPT-6.2 Sol, high effort |
+| `carbon` | OpenCode, Gemini 4 Carbon through OpenRouter, high effort |
+| `neon` | OpenCode, Gemini 4 Neon through OpenRouter, xhigh effort |
 
 A lead agent starts one with a task and keeps working:
 
@@ -82,12 +84,17 @@ so the lead never polls.
 - Codex runs with `--no-daemon`, as herdr-core requires. To let Codex report without
   a permission prompt, add `prefix_rule(pattern=["hc", "send"], decision="allow")` to
   `~/.codex/rules/default.rules`.
+- OpenCode's interactive UI has no `--model` flag, so `carbon` and `neon` set the model with
+  `OPENCODE_CONFIG_CONTENT` and run `--standalone`: without it the setting never
+  reaches OpenCode's background service. They need an OpenRouter sign-in in OpenCode
+  and are billed per token.
 - A Claude Code worker shows a trust prompt the first time it opens a folder; hc
   reports it to the lead as blocked.
 
 `skills/` holds two Claude Code skills, installed to `~/.claude/skills/`: `herdr`
 points agents at `hc --skill` and `herdr-app --skill` and covers delegating to the
-templates; `orchestrate` leads a task by delegating to the three workers.
+templates; `orchestrate` leads a task by delegating to `opus`, `astra` and `sol`; name `carbon`
+or `neon` yourself when you want one.
 
 ## Changing things
 
